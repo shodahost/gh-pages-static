@@ -5,6 +5,38 @@ import { join } from "path";
 
 const postsDirectory = join(process.cwd(), "_posts");
 
+// Function to replace ${basePath} with the appropriate value based on the environment
+function replacePathInFile(filePath: string) {
+  const data = fs.readFileSync(filePath, 'utf8');
+  const basePath = process.env.NODE_ENV === 'development' ? '' : '/gh-pages-static';
+  const result = data.replace(/\$\{basePath\}/g, basePath);
+  fs.writeFileSync(filePath, result, 'utf8');
+}
+
+// Function to get all .md files in a directory
+function getMarkdownFiles(dir: string, files: string[] = []): string[] {
+  fs.readdirSync(dir).forEach(file => {
+    const filePath = join(dir, file);
+    if (fs.statSync(filePath).isDirectory()) {
+      getMarkdownFiles(filePath, files);
+    } else if (filePath.endsWith('.md')) {
+      files.push(filePath);
+    }
+  });
+  return files;
+}
+
+// Function to replace basePath in all .md files in _posts directory
+function replaceBasePathInMarkdownFiles() {
+  const markdownFiles = getMarkdownFiles(postsDirectory);
+  markdownFiles.forEach(filePath => {
+    replacePathInFile(filePath);
+  });
+}
+
+// Call the function to replace basePath before other operations
+replaceBasePathInMarkdownFiles();
+
 export function getPostSlugs() {
   return fs.readdirSync(postsDirectory);
 }
