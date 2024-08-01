@@ -3,24 +3,24 @@ import { EXAMPLE_PATH } from "@/lib/constants";
 
 export function Footer() {
   return (
-    <footer className="bg-neutral-50 border-t border-neutral-200 dark:bg-slate-800">
+    <footer className="bg-red-600  dark:bg-black">
       <Container>
-        <div className="py-28 flex flex-col lg:flex-row items-center">
-          <h3 className="text-4xl lg:text-[2.5rem] font-bold tracking-tighter leading-tight text-center lg:text-left mb-10 lg:mb-0 lg:pr-4 lg:w-1/2">
-            Statically Generated with Next.js.
+        <div className="py-28 flex flex-col lg:flex-row justify-between">
+          <h3 className="text-white text-4xl lg:text-[2.5rem] font-bold tracking-tighter leading-tight text-center lg:text-left mb-10 lg:mb-0 lg:pr-4 lg:w-1/2">
+            This stuff feels weird.
           </h3>
-          <div className="flex flex-col lg:flex-row justify-center items-center lg:pl-4 lg:w-1/2">
+          <div className="flex flex-col  lg:pl-4">
+            <h6>Here's a haiku about machine learning:</h6>
+            <blockquote className="italic py-4 text-xl">
+              Data flows like streams <br />
+              Algorithms learn, adapt <br />
+              Machines grasp patterns <br />
+            </blockquote>
             <a
-              href="https://nextjs.org/docs/app/building-your-application/routing/layouts-and-templates"
-              className="mx-3 bg-black hover:bg-white hover:text-black border border-black text-white font-bold py-3 px-12 lg:px-8 duration-200 transition-colors mb-6 lg:mb-0"
+              href={`https://anthropic.com/${EXAMPLE_PATH}`}
+              className=" font-bold  hover:underline text-white"
             >
-              Read Documentation
-            </a>
-            <a
-              href={`https://github.com/vercel/next.js/tree/canary/examples/${EXAMPLE_PATH}`}
-              className="mx-3 font-bold hover:underline"
-            >
-              View on GitHub
+              written by a machine (Claude.ai)
             </a>
           </div>
         </div>

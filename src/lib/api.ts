@@ -8,7 +8,7 @@ const postsDirectory = join(process.cwd(), "_posts");
 // Function to replace ${basePath} with the appropriate value based on the environment
 function replacePathInFile(filePath: string) {
   const data = fs.readFileSync(filePath, 'utf8');
-  const basePath = process.env.NODE_ENV === 'development' ? '' : '/gh-pages-static';
+  const basePath = process.env.NODE_ENV === 'production' ? '' : '/gh-pages-static';
   const result = data.replace(/\$\{basePath\}/g, basePath);
   fs.writeFileSync(filePath, result, 'utf8');
 }

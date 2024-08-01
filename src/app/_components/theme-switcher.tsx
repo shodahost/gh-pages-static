@@ -105,9 +105,9 @@ const Script = memo(() => (
  */
 export const ThemeSwitcher = () => {
   return (
-    <>
+    <div className="max-w-screen-xl flex flex-wrap justify-end items-right px-6 mx-auto">
       <Script />
       <Switch />
-    </>
+    </div>
   );
 };

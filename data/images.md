@@ -1,0 +1,23 @@
+---
+images:
+  - imageUrl: "${basePath}/assets/blog/space-station/spacestation_ai_1.jpg"
+    linkUrl: "${basePath}/posts/space-station"
+  - imageUrl: "${basePath}/assets/blog/city-stadium/citystadium_ai_3.jpg"
+    linkUrl: "${basePath}/posts/city-stadium"
+  - imageUrl: "${basePath}/assets/blog/noir-office/noiroffice_add_2.jpg"
+    linkUrl: "${basePath}/posts/noir-office"
+  - imageUrl: "${basePath}/assets/blog/cyber-city-birdeye/cybercitybirdeye_ai_1.jpg"
+    linkUrl: "${basePath}/posts/cyber-city-birdeye"
+  - imageUrl: "${basePath}/assets/blog/cyber-city-street/cybercitystreet_ai_3.jpg"
+    linkUrl: "${basePath}/posts/cyber-city-street"
+  - imageUrl: "${basePath}/assets/blog/space-station/spacestation_add_1.jpg"
+    linkUrl: "${basePath}/posts/space-station"
+  - imageUrl: "${basePath}/assets/blog/noir-office/noiroffice_add_1.jpg"
+    linkUrl: "${basePath}/posts/noir-office"
+  - imageUrl: "assets/blog/cyber-city-birdeye/cybercitybirdeye_ai_3.jpg"
+    linkUrl: "${basePath}/posts/cyber-city-birdeye"
+  - imageUrl: "${basePath}/assets/blog/noir-office/noiroffice_ai_2.jpg"
+    linkUrl: "${basePath}/posts/noir-office"
+  - imageUrl: "${basePath}/assets/blog/noir-office/noiroffice_ai_1.jpg"
+    linkUrl: "${basePath}/posts/noir-office"
+---
