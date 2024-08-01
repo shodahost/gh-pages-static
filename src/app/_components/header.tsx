@@ -14,7 +14,7 @@ const Header = () => {
     <nav className="bg-white border-gray-200 dark:bg-stone-950">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4 px-4">
         <a 
-          href="/" 
+          href="/gh-pages-static/" 
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
           <img
