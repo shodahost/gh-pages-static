@@ -14,7 +14,7 @@ images:
     linkUrl: "/gh-pages-static/posts/space-station"
   - imageUrl: "/gh-pages-static/assets/blog/noir-office/noiroffice_add_1.jpg"
     linkUrl: "/gh-pages-static/posts/noir-office"
-  - imageUrl: "assets/blog/cyber-city-birdeye/cybercitybirdeye_ai_3.jpg"
+  - imageUrl: "/gh-pages-static/assets/blog/cyber-city-birdeye/cybercitybirdeye_ai_3.jpg"
     linkUrl: "/gh-pages-static/posts/cyber-city-birdeye"
   - imageUrl: "/gh-pages-static/assets/blog/noir-office/noiroffice_ai_2.jpg"
     linkUrl: "/gh-pages-static/posts/noir-office"
